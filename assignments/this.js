@@ -15,7 +15,7 @@
 // Principle 1
 
 // code example for Window Binding
-const sayName = name => {
+const sayName = function(name) {
   console.log("Window Binding (this):", this);
   return name;
 };
@@ -52,10 +52,10 @@ function Person(greeter) {
 }
 
 const dee = new Person("Dee");
-const bob = new Person("Bob");
+const frank = new Person("Frank");
 
 dee.speak();
-bob.speak();
+frank.speak();
 
 // Principle 4
 
